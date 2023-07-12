@@ -15,7 +15,7 @@ class Solution {
         ListNode head = null;
         ListNode tail = null;
         while(l1 != null || l2 != null){
-            int x1=l1!=null?l1.val:0;
+            int x1=l1!=null?l1.val:0;//都是非空链表，但有节点的值可能是空的（没有值）
             int x2=l2!=null?l2.val:0;
             sum = x1 + x2 + carry;
             if(head == null){
