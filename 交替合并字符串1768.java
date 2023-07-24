@@ -1,7 +1,7 @@
 //si山代码
 class Solution {
     public String mergeAlternately(String word1, String word2) {
-        //先将字符串转换成字符数组，再用循环将字符数组一一添加到一个新的字符数组里。
+        //先将字符串转换成字符数组，再用循环将字符数组一一添加到一个新的字符栈里。
         //循环条件是某个最短字符串先循环结束
         int len1 = word1.length();
         int len2 = word2.length();
@@ -46,6 +46,7 @@ class Solution {
 
 //优化后：
 class Solution {
+    //单指针
     public String mergeAlternately(String word1, String word2) {
         int i = 0;
         StringBuilder res = new StringBuilder();
