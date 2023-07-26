@@ -1,4 +1,5 @@
-//优化前
+//找到最高海拔 1732
+// 优化前
 class Solution {
     public int largestAltitude(int[] gain) {
         List<Integer> height = new ArrayList<>();
